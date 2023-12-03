@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sharing.SharingFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loggo" />
+
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Enter Total"
+        android:inputType="numberDecimal|number" />
+
+    <EditText
+        android:id="@+id/tot_num_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_value"
+        android:layout_marginTop="6dp"
+        android:hint="Number of People"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/tip_perc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tot_num_people"
+        android:layout_marginTop="6dp"
+        android:hint="Tip Percentage (Optional)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calc_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_perc"
+        android:layout_marginTop="10dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calc_button"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

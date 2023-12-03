@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RAMMZ Expense Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_expenses">Expenses</string>
+    <string name="title_sharing">Sharing</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="label_text">Lable</string>
+    <string name="progress_text">%1$d%%</string>
+    <string-array name="categories_array">
+        <item>Food</item>
+        <item>Housing</item>
+        <item>Transportation</item>
+        <item>Entertainment</item>
+        <item>Fitness</item>
+        <item>Travel</item>
+        <item>Education</item>
+        <item>Taxes</item>
+        <item>Insurance</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

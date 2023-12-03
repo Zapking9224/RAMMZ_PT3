@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "318372318941",
+    "firebase_url": "https://database-testing-56107-default-rtdb.firebaseio.com",
+    "project_id": "database-testing-56107",
+    "storage_bucket": "database-testing-56107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318372318941:android:5a163feee30516196b1534",
+        "android_client_info": {
+          "package_name": "com.example.rammzexpensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwXHpdzzhwULrKM4IzTV4okRPepo83CsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

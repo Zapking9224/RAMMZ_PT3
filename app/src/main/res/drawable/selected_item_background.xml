@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background for selected item -->
+    <item android:drawable="@drawable/shadow_background" android:state_checked="true" />
+
+    <!-- Transparent background for non-selected items -->
+    <item android:drawable="@android:color/transparent" />
+</selector>
