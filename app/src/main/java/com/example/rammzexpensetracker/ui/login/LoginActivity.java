@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.rammzexpensetracker.ui.ForgotPassword.ForgotPasswordActivity;
 import com.example.rammzexpensetracker.ui.signup.SignUpActivity;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText usernameEditText, passwordEditText;
-    private Button loginButton, signUpButton;
+    private Button loginButton, signUpButton, forgotPasswordButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,11 +42,19 @@ public class LoginActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password);
         loginButton = findViewById(R.id.login);
         signUpButton = findViewById(R.id.signUpButton);
+        forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Navigate to the SignUpActivity when the button is clicked
                 startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+            }
+        });
+
+        forgotPasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
             }
         });
 
