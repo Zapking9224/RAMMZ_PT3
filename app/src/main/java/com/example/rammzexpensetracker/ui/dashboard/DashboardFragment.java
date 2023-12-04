@@ -122,6 +122,12 @@ public class DashboardFragment extends Fragment {
                 User user = snapshot.getValue(User.class);
                 if (user != null) {
                     greetingText.setText("Hello,\n" + user.getName() + '!');
+
+                    if (!snapshot.hasChild("budget")) {
+                        fractionText.setTextColor(Color.parseColor("#00000000"));
+                    } else {
+                        fractionText.setTextColor(Color.BLACK);
+                    }
                 }
             }
 
@@ -311,9 +317,9 @@ public class DashboardFragment extends Fragment {
             fractionText.setTextColor(Color.parseColor("#000000")); // sets text to black when under budget
         }
 
-        String.format("%.2f", numerator);
-        String.format("%.2f", denominator);
-        fractionText.setText("$" + numerator.toString() + "/" + "$" + denominator.toString());
+        String formattedNumerator = String.format("%.2f", numerator);
+        String formattedDenominator = String.format("%.2f", denominator);
+        fractionText.setText("$" + formattedNumerator+ "/" + "$" + formattedDenominator);
 
     }
 }
